@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication"
+    android:installLocation="preferExternal"
+    tools:ignore="ExtraText">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/logo2"
+        android:label="FinancesOn"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".NuevoDividendoEstimadoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NuevoDividendoRecibidoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MisTotalesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MiCarteraActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GenerarExcelActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GenerarExcelCarteraActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GenerarExcelComprasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MisComprasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ComprasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DividendosRecibidosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DividendosEstimadosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CarteraActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BalanceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NuevaCompraActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

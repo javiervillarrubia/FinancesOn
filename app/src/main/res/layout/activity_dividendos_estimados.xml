@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_azul"
+    android:foregroundTint="#085C83"
+    android:orientation="vertical"
+    tools:context=".DividendosEstimadosActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016"
+        app:srcCompat="@drawable/abajo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="265dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/worksans"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:shadowColor="#FFFFFF"
+        android:text="DIVIDENDOS ESTIMADOS"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:id="@+id/temp"
+        style="style/viewCustom"
+        android:layout_width="337dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:width="30dp"
+        android:background="@drawable/espacio_escritura_spinner"
+        android:fontFamily="@font/worksans"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintVertical_bias="0.350" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerCompras"
+        style="style/viewCustom"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-59dp"
+        android:width="30dp"
+        android:background="@drawable/espacio_escritura_spinner"
+        android:fontFamily="@font/worksans"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.350" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="336dp"
+        android:layout_height="356dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/espacio_escritura"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="DIVIDENDO NETO"
+            android:textColor="@color/orange"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoNeto"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/espacio_escritura"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="----"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.227"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="DIVIDENDO BRUTO"
+            android:textColor="@color/orange"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoBruto"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/espacio_escritura"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="----"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="152dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/boton_nuevo"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:text="Volver"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.350" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="152dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="-62dp"
+            android:background="@drawable/boton_nuevo"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:text="Modificar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.350" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

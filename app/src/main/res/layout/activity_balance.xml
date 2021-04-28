@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_azul"
+    android:foregroundTint="#085C83"
+    android:orientation="vertical"
+    tools:context=".BalanceActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="237dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/abajo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="172dp"
+        android:layout_height="67dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/worksans"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:shadowColor="#FFFFFF"
+        android:text="BALANCE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="325dp"
+        android:layout_height="489dp"
+        android:background="@drawable/espacio_escritura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="TOTAL CARTERA"
+            android:textColor="@color/orange"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/espacio_escritura"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="----"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="160dp"
+            android:background="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.227"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="% SIN COMISIONES"
+            android:textColor="@color/orange"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoSin"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/espacio_escritura"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="----"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="330dp"
+            android:background="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.227"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="335dp"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="% CON COMISIONES"
+            android:textColor="@color/orange"
+            android:textSize="31sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoCon"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="405dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/espacio_escritura"
+            android:fontFamily="@font/worksans"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:shadowColor="#FFFFFF"
+            android:text="----"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="152dp"
+        android:layout_height="62dp"
+        android:background="@drawable/boton_nuevo"
+        android:fontFamily="@font/worksans"
+        android:gravity="center"
+        android:text="Volver"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
